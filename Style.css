@@ -124,6 +124,8 @@ nav ul{
     flex-direction: column;
     text-decoration: none;
     color: #edb1f1;
+    padding: 1.5rem;
+    border-radius: 10px 0 0 10px;
 }
 
 nav ul :hover{
@@ -241,6 +243,8 @@ nav ul :hover{
    
     align-items: center;
     flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem 0;
 
     }
 
@@ -332,7 +336,7 @@ p
     text-align: center;
     font-style:oblique;
     color: white;
-    width: 20%;
+    width: max-content;
     border-radius: 20px;
     position: fixed;
     bottom: 30px;
@@ -348,7 +352,7 @@ p
     text-align: center;
     font-style:oblique;
     color: white;
-    width: 20%;
+    width: max-content;
     border-radius: 20px;
     position: fixed;
     bottom: 30px;
@@ -362,6 +366,10 @@ iframe{
 }
 
   
+
+
+
+
 @media screen and (max-width:850px) {
 
 
@@ -461,7 +469,7 @@ text-indent: 0rem;
             text-align: center;
             font-style:oblique;
             color: white;
-            width: 20%;
+            width: max-content;
             border-radius: 20px;
             position: fixed;
            top: 30px;
