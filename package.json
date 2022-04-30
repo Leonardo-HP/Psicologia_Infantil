@@ -1,20 +1,32 @@
 {
-  "name": "Psicologia_infantil",
+  "name": "psicologia_infantil",
   "version": "1.0.0",
-  "description": "",
+  "description": "Pagina web html con css de psicologia",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    
+    
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss Assets/scss/main.scss Style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Leonardo-HP/Psicologia_infantil.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Leonardo HP",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Leonardo-HP/Psicologia_infantil/issues"
   },
-  "homepage": "https://github.com/Leonardo-HP/Psicologia_infantil#readme"
+  "homepage": "https://github.com/Leonardo-HP/Psicologia_infantil#readme",
+  "dependencies": {
+    "download": "^8.0.0"
+  },
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
 }

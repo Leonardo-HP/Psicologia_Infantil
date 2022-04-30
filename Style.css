@@ -1,543 +1,316 @@
-*
-{
-   margin: 0;
-   margin-top: 0px; 
-   box-sizing: border-box;
-    }
+* {
+  margin: 0;
+  margin-top: 0px;
+  box-sizing: border-box; }
 
 /* Fondo */
+html {
+  text-decoration: none;
+  font-size: 62.5%; }
 
-html{
-    text-decoration: none;
-    font-size: 62.5%;
-    
-}
+html a {
+  text-decoration: none; }
 
-html a{
-    text-decoration: none;
-}
+body {
+  background: #ef97f515;
+  background-image: url("Assets/Mandala_Transparente_2.02.png");
+  background-image: no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: fixed;
+  background-image: center;
+  font-size: 1.8rem;
+  /*Fuente General*/
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large; }
 
-body
-{
-    background: #ef97f515;
-    background-image:url("Assets/Mandala_Transparente_2.02.png") ;
-    background-image: no-repeat;
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-image: fixed;
-    background-image: center;
-    font-size:1.8rem;
-   
+/*Titulos*/
+body h1 {
+  text-align: justify;
+  font-size: 5rem;
+  text-indent: 10rem; }
 
-/*Fuente General*/
+.gridConteiner {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 5px;
+  justify-items: space-around;
+  align-items: center;
+  grid-template-areas: "logoIndex Menu Menu Menu Menu Menu  " " logoIndex Presentacion Presentacion Presentacion Presentacion Presentacion" ". Presentacion Presentacion Presentacion Presentacion Presentacion" ". Presentacion Presentacion Presentacion Presentacion Presentacion" "imagenes imagenes imagenes  imagenes imagenes imagenes" "footer footer footer footer footer footer"; }
 
-    font-family: Arial, Helvetica, sans-serif;
-    font-size:large;
-   
-    }
+section#cv {
+  margin: 10%; }
 
-    
-    /*Titulos*/
+section#Presentacion {
+  grid-area: Presentacion;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-wrap: wrap; }
 
-body h1
-{
-    text-align:justify ;
-    font-size: 5rem;
-    text-indent: 10rem;
+footer {
+  grid-area: footer;
+  width: 100%;
+  height: 10vh;
+  background-color: #edb1f1;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: -16px; }
 
-    }
+section#logoIndex {
+  grid-area: logoIndex; }
 
+header {
+  grid-area: Menu;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium; }
 
+section#imagenesPresentacion {
+  grid-area: imagenes;
+  width: 100%;
+  height: 100%; }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
 
-.gridConteiner{
+nav ul {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  text-decoration: none;
+  color: #edb1f1;
+  padding: 1.5rem; }
+
+#indexNav {
+  border-radius: 10px 0 0 10px; }
+
+nav ul :hover {
+  color: white;
+  transition: 1s;
+  transform: scale(1.5); }
+
+.header .button {
+  background-color: #c5c4ebd0;
+  padding: 15px;
+  text-align: center;
+  font-style: oblique;
+  color: white;
+  width: 20%;
+  border-radius: 20px;
+  position: fixed;
+  top: 30px;
+  left: 30px; }
+
+.header .button {
+  background-color: #edb1f1;
+  padding: 15px;
+  text-align: center;
+  font-style: oblique;
+  color: white;
+  width: 20%;
+  border-radius: 20px;
+  position: fixed;
+  top: 30px;
+  left: 30px; }
+
+.header .button {
+  display: none;
+  text-decoration: none; }
+
+nav {
+  width: 100%; }
+
+nav ul {
+  background-color: #edb1f1;
+  text-decoration: none;
+  flex-direction: row;
+  justify-content: space-around;
+  color: #edb1f1; }
+
+nav ul :hover {
+  color: white; }
+
+.mensaje {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  background: #9796f152;
+  text-align: left;
+  border-radius: 10px;
+  padding: 20px, 20px, 0, 0; }
+
+/*Inicio*/
+.index_logo img {
+  margin: auto;
+  display: block;
+  min-height: 100px; }
+
+.flex__container__imagenes {
+  width: 100%;
+  display: flex;
+  /*flex-direction: row;
+    flex-wrap: nowrap;*/
+  flex-flow: center;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0; }
+
+/*Quienes Somos?*/
+img.quienesSomos_silueta {
+  float: left;
+  padding: 30px; }
+
+/*Blog*/
+/*Alineacion */
+.flex__container__blog {
+  display: flex;
+  /*flex-direction: column;
+    flex-wrap: nowrap;*/
+  flex-flow: column nowrap;
+  justify-content: space-evenly; }
+
+/*formato*/
+.Blog_EntradaBlog {
+  width: 90%;
+  margin: 3%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  background-color: #edb1f18e;
+  border-radius: 5px;
+  padding: 5px;
+  overflow: hidden;
+  display: block; }
+
+/* .Blog_EntradaBlog--imagen{
+
+  }*/
+p {
+  margin-bottom: 10px; }
+
+.Blog_EntradaBlog h2 {
+  font-style: normal; }
+
+/* Boton leer mas*/
+.Blog_EntradaBlog--BotonLeer {
+  background-color: #c5c4ebd0;
+  padding: 10px;
+  text-align: center;
+  font-style: italic;
+  color: white;
+  display: inline-block;
+  width: 20%;
+  border-radius: 20px;
+  border-width: 2px;
+  margin-top: 10px;
+  margin-bottom: 2px; }
+
+/*Boton Agendar una cita*/
+.BotonAgendar {
+  background-color: #c5c4ebd0;
+  padding: 15px;
+  text-align: center;
+  font-style: oblique;
+  color: white;
+  width: max-content;
+  border-radius: 20px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px; }
+
+/*movimiento del boton*/
+.BotonAgendar :hover {
+  background-color: #edb1f1;
+  padding: 15px;
+  text-align: center;
+  font-style: oblique;
+  color: white;
+  width: max-content;
+  border-radius: 20px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px; }
+
+iframe {
+  width: 100%;
+  max-width: 500px; }
+
+@media screen and (min-width: 850px) {
+  section#carouselImagenes {
+    display: none; }
+  .mensaje {
+    width: 100%;
+    height: 100%;
+    background: #9796f152;
+    text-align: justify;
+    border-radius: 10px;
+    padding: 20px; } }
+
+@media screen and (max-width: 850px) {
+  body {
+    background-image: url(./Assets/Mandala_Transparente_2.02.png);
+    background-size: contain;
+    background-repeat: repeat; }
+  .gridConteiner {
     min-height: 100vh;
     display: grid;
-    grid-template-columns: repeat(6,1fr);
-
+    grid-template-columns: 1fr;
     column-gap: 5px;
-    justify-items:space-around ;
+    justify-items: space-around;
     align-items: center;
-    
-
-
-
-
-
-grid-template-areas:
-"logoIndex Menu Menu Menu Menu Menu  "
-" logoIndex Presentacion Presentacion Presentacion Presentacion Presentacion"
-". Presentacion Presentacion Presentacion Presentacion Presentacion"
-". Presentacion Presentacion Presentacion Presentacion Presentacion"
-"imagenes imagenes imagenes  imagenes imagenes imagenes"
-"footer footer footer footer footer footer"
-
-   ;
-}
-
-
-section#cv{
-    margin: 10%;
-}
-
-
-
-section#Presentacion{
-    grid-area: Presentacion;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    flex-wrap: wrap;
-    
-  
-}
-
-footer{
-    grid-area: footer;
-    width: 100%;
-    height:10vh;
-    background-color: #edb1f1;
-    border-radius: 10px 10px 0 0;
-   margin-bottom: -16px;
-}
-
-section#logoIndex{
-    grid-area: logoIndex;
-}
-header{
-    grid-area: Menu;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: medium;
-  
-}
-section#imagenesPresentacion{
+    grid-template-areas: " Menu Menu Menu " " logoIndex logoIndex logoIndex "   "Presentacion Presentacion Presentacion " "Presentacion Presentacion Presentacion " "imagenes imagenes imagenes" "footer footer footer "; }
+  section#carouselImagenes {
     grid-area: imagenes;
     width: 100%;
     height: 100%;
-}
-
-
-
-
-.header{
+    padding: 10px; }
+  html h1 {
     display: flex;
-    justify-content: space-between;
+    text-align: center;
     align-items: center;
-
-}
-
-
-
-nav ul{
-    display: flex;
-    list-style: none;
-    flex-direction: column;
-    text-decoration: none;
-    color: #edb1f1;
-    padding: 1.5rem;
-}
-
-#indexNav{
-    border-radius: 10px 0 0 10px;
-    }
-
-nav ul :hover{
-    color: white;
-    transition: 1s;
-    transform: scale(1.5)
-}
-
-
-
-.header .button
-{
+    float: CENTER;
+    width: 100%;
+    text-indent: 0rem;
+    font-size: 4rem;
+    color: #42033f;
+    margin: 0;
+    margin-top: 0px;
+    padding: 5%;
+    border: 0px;
+    margin: 0px; }
+  .mensaje {
+    width: 100%;
+    height: 100%;
+    background: #9796f152;
+    text-align: justify;
+    border-radius: 10px, 10px , 0, 0;
+    padding: 20px; }
+  .index_logo img {
+    display: block;
+    min-height: 100px;
+    margin-top: 20px; }
+  .BotonMenu {
     background-color: #c5c4ebd0;
     padding: 15px;
     text-align: center;
-    font-style:oblique;
+    font-style: oblique;
     color: white;
     width: 20%;
     border-radius: 20px;
     position: fixed;
     top: 30px;
-    left: 30px;
-    }
-
-
-
-    .header .button
-{
-    background-color:  #edb1f1;
-    padding: 15px;
-    text-align: center;
-    font-style:oblique;
-    color: white;
-    width: 20%;
-    border-radius: 20px;
-    position: fixed;
-   top: 30px;
-   left:  30px;
-    }
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-    
-.header .button{
-
-    display: none;
-    text-decoration: none;
-}
-
-nav{
-
-    width: 100%;
-
-    
-}
-nav ul{
-
+    left: 30px; }
+  .BotonMenu :hover {
     background-color: #edb1f1;
-    text-decoration: none;
-    flex-direction: row;
-    justify-content: space-around;
-    color: #edb1f1;
-}
-
-
-nav ul :hover{
-    color: white;
-}
-
-
-
-
-
-.mensaje{
-    
-    width: 90%;
-    height: 100%;
-    margin: 0 auto ;
-    background: #9796f152 ;
-    text-align: left;
-    border-radius: 10px;
-    padding: 20px;
-    }
-
-
-
-
-
-
-/*Inicio*/
-
-.index_logo img 
-{
-    margin:auto;
-    display: block;
-    min-height: 100px;
- 
-
-    }
-
-.flex__container__imagenes
-{
-
-    
-    width: 100%;
-    display: flex;
-    /*flex-direction: row;
-    flex-wrap: nowrap;*/
-    flex-flow: center;
-    justify-content: space-around;
-   
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin: 1rem 0;
-
-    }
-
-
-
-
-
-
-
-
-
-/*Quienes Somos?*/
-
-img.quienesSomos_silueta 
-{
-    float: left;
-   padding: 30px;
-    }
-
-
-/*Blog*/
-/*Alineacion */
-
-.flex__container__blog
-{
-    display: flex;
-    /*flex-direction: column;
-    flex-wrap: nowrap;*/
-    flex-flow: column nowrap;
-    justify-content: space-evenly
-    }
-
-
-
-/*formato*/
-
-.Blog_EntradaBlog 
-{
-    
-    width: 90%;
-    margin: 3%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: medium;
-    background-color: #edb1f18e;
-    border-radius: 5px;
-    padding: 5px;
-    overflow: hidden;
-    display: block;
-    }
-
- /* .Blog_EntradaBlog--imagen{
-
-  }*/
-
-p
-{
-    margin-bottom: 10px;
-    }
-
-.Blog_EntradaBlog h2
-{
-    font-style:normal;
-    }
-
-  /* Boton leer mas*/
-.Blog_EntradaBlog--BotonLeer
-{
-    background-color: #c5c4ebd0;
-    padding: 10px;
-    text-align: center;
-    font-style: italic;
-    color: white;
-    display: inline-block ;
-    width: 20%;
-    border-radius: 20px;
-    border-width: 2px;
-    margin-top: 10px;
-    margin-bottom: 2px;
-    }
-
-
-
-/*Boton Agendar una cita*/
-
-.BotonAgendar 
-{
-    background-color: #c5c4ebd0;
     padding: 15px;
     text-align: center;
-    font-style:oblique;
+    font-style: oblique;
     color: white;
     width: max-content;
     border-radius: 20px;
     position: fixed;
-    bottom: 30px;
-    right: 30px;
-    }
-
-/*movimiento del boton*/
-
-.BotonAgendar  :hover
-{
-    background-color:  #edb1f1;
-    padding: 15px;
-    text-align: center;
-    font-style:oblique;
-    color: white;
-    width: max-content;
-    border-radius: 20px;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    }
-
-
-iframe{
-    width: 100%;
-    max-width: 500px;
-}
-
-  
-@media screen and (min-width:850px) {
-    section#carouselImagenes{
-        display: none;
-    }
-
-
-    .mensaje{
-    
-
-
-
-        width: 100%;
-        height: 100%;
-        
-        background: #9796f152 ;
-        text-align: justify;
-        border-radius: 10px;
-        padding: 20px;
-        
-}
-}
-
-
-
-
-
-
-
-
-@media screen and (max-width:850px) {
-
-
-
-
-
-    
-
-body{
-    background-image: url(./Assets/Mandala_Transparente_2.02.png);
-    background-size: contain;
-    background-repeat: repeat;
-}   
-    
-.gridConteiner{
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr;
-
-    column-gap: 5px;
-    justify-items:space-around ;
-    align-items: center;
-grid-template-areas:
-" Menu Menu Menu "
-" logoIndex logoIndex logoIndex "
-
-
-"Presentacion Presentacion Presentacion "
-"Presentacion Presentacion Presentacion "
-"imagenes imagenes imagenes"
-"footer footer footer "
-   ;
-}
-
-
-section#carouselImagenes{
-
-    
-    
-            grid-area: imagenes;
-            width: 100%;
-            height: 100%;
-        }
-
-
-
-
-
-html h1
-    {
-        display: flex;
-       text-align:center;
-       align-items: center;
-float:CENTER;
-width: 100%;
-text-indent: 0rem;
-       font-size: 4rem;
-       color: rgb(66, 3, 63);;
-       margin: 0;
-       margin-top: 0px; 
-       padding: 5% ;
-       border: 0px;
-       margin: 0px;
-
-
-    }
-    .mensaje{
-    
-        width: 100%;
-        height: 100%;
-        
-        background: #9796f152 ;
-        text-align: justify;
-        border-radius: 10px;
-        padding: 20px;
-        }
-
-        .index_logo img 
-        {
-         
-            display: block;
-            min-height: 100px;
-            margin-top: 20px;
-
-        }
-
-
-
-        .BotonMenu
-        {
-            background-color: #c5c4ebd0;
-            padding: 15px;
-            text-align: center;
-            font-style:oblique;
-            color: white;
-            width: 20%;
-            border-radius: 20px;
-            position: fixed;
-            top: 30px;
-            left: 30px;
-            }
-        
-        
-        
-        .BotonMenu  :hover
-        {
-            background-color:  #edb1f1;
-            padding: 15px;
-            text-align: center;
-            font-style:oblique;
-            color: white;
-            width: max-content;
-            border-radius: 20px;
-            position: fixed;
-           top: 30px;
-           left:  30px;
-            }
-        
-        }
+    top: 30px;
+    left: 30px; } }
