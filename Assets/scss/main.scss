@@ -120,7 +120,11 @@ section#imagenesPresentacion{
 
 
 
-nav ul{
+nav {
+
+    width: 50%;
+
+ ul{
     display: flex;
     list-style: none;
     flex-direction: column;
@@ -128,8 +132,18 @@ nav ul{
     color: #edb1f1;
     padding: 1.5rem;
     border-radius: 5px;
+
+
+    &:hover{
+
+        transition: 1s;
+        transform: scale(1.08)
+        
+    }
     
 }
+}
+
 
 #indexNav{
     background-color: #edb1f1;
@@ -137,12 +151,7 @@ nav ul{
     margin: 20px;
 }
 
-nav ul :hover{
 
-    transition: 1s;
-    transform: scale(1.08)
-    
-}
 
 
 .navbar-light .navbar-toggler{
@@ -151,14 +160,6 @@ background-color: #edb1f1;
 }
 
 
-nav{
-
-
-
-    width: 50%;
-    
-    
-}
 
 
 /*Inicio*/
@@ -405,18 +406,13 @@ border: 10px;
     }
     .mensaje{
     
-
-        width: 100%
+        width: 100%;
         height: 100%;
         background: #b696f152 ;
         text-align: justify;
         border-radius: 10px;
-        padding: px
-    
-
-
-
-        }
+        padding: px;
+     }
 
         .index_logo img 
         {
@@ -427,5 +423,5 @@ border: 10px;
 
         }
 
-
-        }
+        
+    }
