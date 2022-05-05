@@ -95,7 +95,6 @@ footer{
     grid-area: footer;
     width: 100%;
     height:10vh;
-    background-color: #edb1f1;
     border-radius: 10px 10px 0 0;
    margin-bottom: -16px;
 }
@@ -117,49 +116,51 @@ section#imagenesPresentacion{
 
 
 
+/*Variables de color*/
+
+
+$color-menu: rgb(255, 121, 219);
+$color-hover:rgb(205, 26, 157);
+$color-footer:rgb(81, 228, 108);
+
 
 
 nav {
 
     width: 50%;
+   margin-left: 10px;
 
  ul{
     display: flex;
     list-style: none;
     flex-direction: column;
     text-decoration: none;
-    color: #edb1f1;
     padding: 1.5rem;
-    border-radius: 5px;
+    background-color: $color-menu;
+    border-radius: 3px;
 
 
-    &:hover{
 
-        transition: 1s;
-        transform: scale(1.08)
-        
+
+        li  :hover{
+
+          background-color: $color-hover;
+            transition: 1s;
+            transform: scale(1.08);
+            border-radius: 5px;
+          
+         
+         }
+
     }
-    
 }
-}
-
-
-#indexNav{
-    background-color: #edb1f1;
-    padding-left: 30px;
-    margin: 20px;
-}
-
 
 
 
 .navbar-light .navbar-toggler{
-color: #cc80d1;
-background-color: #edb1f1;
+    color: $color-hover;
+    background-color: $color-menu
 }
-
-
-
 
 /*Inicio*/
 
@@ -264,7 +265,7 @@ p
 
 .BotonAgendar 
 {
-    background-color: #c5c4ebd0;
+    background-color: $color-menu;
     padding: 15px;
     text-align: center;
     font-style:oblique;
@@ -280,7 +281,7 @@ p
 
 .BotonAgendar  :hover
 {
-    background-color:  #edb1f1;
+    background-color:  $color-hover;
     padding: 15px;
     text-align: center;
     font-style:oblique;
