@@ -36,7 +36,12 @@ body h1 {
   column-gap: 5px;
   justify-items: space-around;
   align-items: center;
-  grid-template-areas: "logoIndex Menu Menu Menu Menu Menu  " " logoIndex Presentacion Presentacion Presentacion Presentacion Presentacion" ". Presentacion Presentacion Presentacion Presentacion Presentacion" ". Presentacion Presentacion Presentacion Presentacion Presentacion" "imagenes imagenes imagenes  imagenes imagenes imagenes" "footer footer footer footer footer footer"; }
+  grid-template-areas: "logoIndex Menu Menu Menu Menu Menu  "
+ " logoIndex Presentacion Presentacion Presentacion Presentacion Presentacion"
+ ". Presentacion Presentacion Presentacion Presentacion Presentacion"
+ ". Presentacion Presentacion Presentacion Presentacion Presentacion"
+ "imagenes imagenes imagenes  imagenes imagenes imagenes"
+ "footer footer footer footer footer footer"; }
 
 section#cv {
   margin: 10%; }
@@ -55,6 +60,15 @@ footer {
   border-radius: 10px 10px 0 0;
   margin-bottom: -16px; }
 
+.btn--twitter {
+  background-color: #55acee; }
+
+.btn--facebook {
+  background-color: #3a5795; }
+
+.btn--send-mail {
+  background-color: #c25e30; }
+
 section#logoIndex {
   grid-area: logoIndex; }
 
@@ -68,8 +82,9 @@ section#imagenesPresentacion {
   width: 100%;
   height: 100%; }
 
-/*Variables de color*/
 nav {
+  display: grid;
+  grid-area: Menu;
   width: 50%;
   margin-left: 10px; }
   nav ul {
@@ -81,13 +96,13 @@ nav {
     background-color: #ff79db;
     border-radius: 3px; }
     nav ul li :hover {
-      background-color: #cd1a9d;
+      background-color: #f547e6;
       transition: 1s;
       transform: scale(1.08);
       border-radius: 5px; }
 
 .navbar-light .navbar-toggler {
-  color: #cd1a9d;
+  color: #f547e6;
   background-color: #ff79db; }
 
 /*Inicio*/
@@ -172,7 +187,7 @@ p {
 
 /*movimiento del boton*/
 .BotonAgendar :hover {
-  background-color: #cd1a9d;
+  background-color: #f547e6;
   padding: 15px;
   text-align: center;
   font-style: oblique;
@@ -210,7 +225,12 @@ iframe {
     column-gap: 5px;
     justify-items: space-around;
     align-items: center;
-    grid-template-areas: " Menu Menu Menu " " logoIndex logoIndex logoIndex "   "Presentacion Presentacion Presentacion " "Presentacion Presentacion Presentacion " "imagenes imagenes imagenes" "footer footer footer "; }
+    grid-template-areas: " Menu Menu Menu "
+ " logoIndex logoIndex logoIndex "
+   "Presentacion Presentacion Presentacion "
+ "Presentacion Presentacion Presentacion "
+ "imagenes imagenes imagenes"
+ "footer footer footer "; }
   section#carouselImagenes {
     grid-area: imagenes;
     width: 100%;

@@ -1,3 +1,5 @@
+@import 'colores';
+
 *
 {
    margin: 0;
@@ -18,7 +20,7 @@ html{
 
 body
 {
-    background: #ef97f515;
+    background: $color-fondo-html;
     background-image:url("Assets/Mandala_Transparente_2.02.png") ;
     background-image: no-repeat;
     background-repeat: no-repeat;
@@ -30,7 +32,8 @@ body
 
 /*Fuente General*/
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: $fuente-general;
+
     font-size:large;
    
     }
@@ -97,7 +100,18 @@ footer{
     height:10vh;
     border-radius: 10px 10px 0 0;
    margin-bottom: -16px;
+  
 }
+
+
+@each $social, $color in $redes {
+    .btn--#{$social}{
+        background-color: $color;
+    }
+    
+}
+
+
 
 section#logoIndex{
     grid-area: logoIndex;
@@ -116,17 +130,13 @@ section#imagenesPresentacion{
 
 
 
-/*Variables de color*/
 
-
-$color-menu: rgb(255, 121, 219);
-$color-hover:rgb(205, 26, 157);
-$color-footer:rgb(81, 228, 108);
 
 
 
 nav {
-
+display: grid;
+grid-area: Menu;
     width: 50%;
    margin-left: 10px;
 
@@ -138,8 +148,6 @@ nav {
     padding: 1.5rem;
     background-color: $color-menu;
     border-radius: 3px;
-
-
 
 
         li  :hover{
@@ -163,6 +171,9 @@ nav {
 }
 
 /*Inicio*/
+
+
+
 
 .index_logo img 
 {
