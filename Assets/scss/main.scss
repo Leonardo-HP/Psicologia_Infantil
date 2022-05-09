@@ -20,7 +20,7 @@ html{
 
 body
 {
-    background: $color-fondo-html;
+    background: map-get($map: $colores-rosa, $key: color-fondo-html );
     background-image:url("Assets/Mandala_Transparente_2.02.png") ;
     background-image: no-repeat;
     background-repeat: no-repeat;
@@ -100,7 +100,7 @@ footer{
     height:10vh;
     border-radius: 10px 10px 0 0;
    margin-bottom: -16px;
-  
+  background-color: map-get($map: $colores-rosa, $key: color-menu )
 }
 
 
@@ -146,13 +146,13 @@ grid-area: Menu;
     flex-direction: column;
     text-decoration: none;
     padding: 1.5rem;
-    background-color: $color-menu;
+    background-color: map-get($map: $colores-rosa, $key: color-menu );
     border-radius: 3px;
 
 
         li  :hover{
 
-          background-color: $color-hover;
+          background-color: map-get($map: $colores-rosa, $key: color-hover );
             transition: 1s;
             transform: scale(1.08);
             border-radius: 5px;
@@ -166,8 +166,8 @@ grid-area: Menu;
 
 
 .navbar-light .navbar-toggler{
-    color: $color-hover;
-    background-color: $color-menu
+    color:map-get($map: $colores-rosa, $key: color-hover );
+    background-color: map-get($map: $colores-rosa, $key: color-menu )
 }
 
 /*Inicio*/
@@ -276,7 +276,7 @@ p
 
 .BotonAgendar 
 {
-    background-color: $color-menu;
+    background-color: map-get($map: $colores-rosa, $key: color-menu );
     padding: 15px;
     text-align: center;
     font-style:oblique;
@@ -292,7 +292,7 @@ p
 
 .BotonAgendar  :hover
 {
-    background-color:  $color-hover;
+    background-color: map-get($map: $colores-rosa, $key: color-hover );
     padding: 15px;
     text-align: center;
     font-style:oblique;
