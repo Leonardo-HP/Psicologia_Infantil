@@ -1,3 +1,13 @@
+body {
+  background: #ef97f515;
+  background-image: no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: fixed;
+  background-image: center;
+  font-size: 1.8rem; }
+
+/* mixin */
 * {
   margin: 0;
   margin-top: 0px;
@@ -11,14 +21,7 @@ html {
     text-decoration: none; }
 
 body {
-  background: #ef97f515;
   background-image: url("Assets/Mandala_Transparente_2.02.png");
-  background-image: no-repeat;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: fixed;
-  background-image: center;
-  font-size: 1.8rem;
   /*Fuente General*/
   font-family: Arial, Helvetica, sans-serif;
   font-size: large; }

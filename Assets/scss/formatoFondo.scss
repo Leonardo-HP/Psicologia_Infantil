@@ -1,0 +1,11 @@
+%fondo {
+
+background: map-get($map: $colores-rosa, $key: color-fondo-html );
+background-image: no-repeat;
+background-repeat: no-repeat;
+background-size:cover;
+background-image: fixed;
+background-image: center;
+font-size:1.8rem;
+
+}

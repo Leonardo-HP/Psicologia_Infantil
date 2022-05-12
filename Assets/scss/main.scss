@@ -1,18 +1,21 @@
-@import 'colores';
+@import "colores";
+@import 'formatoFondo';
+
+/* mixin */
+
 
 *
 {
-   margin: 0;
-   margin-top: 0px; 
-   box-sizing: border-box;
-    }
+    margin: 0;
+    margin-top: 0px; 
+    box-sizing: border-box;
+     }
 
 /* Fondo */
 
 html{
     text-decoration: none;
     font-size: 62.5%;
-    
  a{
     text-decoration: none;
 }
@@ -20,15 +23,9 @@ html{
 
 body
 {
-    background: map-get($map: $colores-rosa, $key: color-fondo-html );
+
+    @extend %fondo;
     background-image:url("Assets/Mandala_Transparente_2.02.png") ;
-    background-image: no-repeat;
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-image: fixed;
-    background-image: center;
-    font-size:1.8rem;
-   
 
 /*Fuente General*/
 
