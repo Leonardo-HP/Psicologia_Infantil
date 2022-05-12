@@ -81,16 +81,27 @@ section#imagenesPresentacion {
   width: 100%;
   height: 100%; }
 
+section#Menu {
+  grid-area: Menu; }
+
+/* Cuando es escritorio*/
+@media screen and (max-width: 850px) {
+  nav {
+    display: flex;
+    width: 100%;
+    margin-left: 10px; } }
+
 nav {
-  display: grid;
-  grid-area: Menu;
-  width: 50%;
+  display: flex;
+  width: 80%;
   margin-left: 10px; }
   nav ul {
     display: flex;
     list-style: none;
     flex-direction: column;
+    align-items: center;
     text-decoration: none;
+    text-align: center;
     padding: 1.5rem;
     background-color: #ff79db;
     border-radius: 3px; }
