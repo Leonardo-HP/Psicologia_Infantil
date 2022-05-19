@@ -17,9 +17,7 @@ body {
 .footer {
   display: flex;
   justify-content: center;
-  background-color: #ff79db; }
-  .footer a {
-    text-decoration: dotted; }
+  background-color: #f57fbe; }
 
 /* mixin */
 * {
@@ -70,7 +68,7 @@ footer {
   width: 100%;
   height: 100%;
   column-gap: 5px;
-  background-color: #ff79db; }
+  background-color: #f57fbe; }
 
 section#logoIndex {
   grid-area: logoIndex; }
@@ -107,17 +105,17 @@ nav {
     text-decoration: none;
     text-align: center;
     padding: 1.5rem;
-    background-color: #ff79db;
+    background-color: #ff009d;
     border-radius: 3px; }
     nav ul li :hover {
-      background-color: #f547e6;
+      background-color: #f368e7;
       transition: 1s;
       transform: scale(1.08);
       border-radius: 5px; }
 
 .navbar-light .navbar-toggler {
-  color: #f547e6;
-  background-color: #ff79db; }
+  color: #f368e7;
+  background-color: #ff009d; }
 
 /*Inicio*/
 .index_logo img {
@@ -188,7 +186,7 @@ p {
 
 /*Boton Agendar una cita*/
 .BotonAgendar {
-  background-color: #ff79db;
+  background-color: #ff009d;
   padding: 15px;
   text-align: center;
   font-style: oblique;
@@ -201,7 +199,7 @@ p {
 
 /*movimiento del boton*/
 .BotonAgendar :hover {
-  background-color: #f547e6;
+  background-color: #f368e7;
   padding: 15px;
   text-align: center;
   font-style: oblique;
@@ -222,10 +220,13 @@ iframe {
   .mensaje {
     width: 100%;
     height: 100%;
-    background: #9796f152;
+    background: #f196d452;
     text-align: justify;
-    border-radius: 10px 0 0 10px;
-    padding: 20px; } }
+    border-radius: 10px 10px 10px 10px;
+    padding: 50px;
+    margin: 10px;
+    border: 10px;
+    border-color: #0037ff; } }
 
 @media screen and (max-width: 850px) {
   body {
@@ -248,29 +249,22 @@ iframe {
   section#imagenesPresentacion {
     display: none; }
   html h1 {
-    display: flex;
+    justify-content: center;
     text-align: center;
     align-items: center;
-    float: center;
-    width: 100%;
-    text-indent: 0rem;
-    font-size: 4rem;
-    color: #42033f;
-    margin: 0;
-    margin-top: 0px;
-    padding: 5%;
-    border: 0px;
-    margin: 0px;
-    text-align: center; }
+    font-size: 5rem; }
   section#Presentacion {
     border: 10px; }
   .mensaje {
     width: 100%;
     height: 100%;
-    background: #b696f152;
+    background: #f196d452;
     text-align: justify;
-    border-radius: 10px;
-    padding: px; }
+    border-radius: 10px 10px 10px 10px;
+    padding: 50px;
+    margin: 10px;
+    border: 10px;
+    border-color: #0037ff; }
   .index_logo img {
     grid-area: logo;
     min-height: 100px;

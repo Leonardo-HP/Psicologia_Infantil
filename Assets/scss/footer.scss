@@ -2,8 +2,5 @@
 
     display: flex;
     justify-content: center;
-    background-color:  map-get($map: $colores-rosa, $key: color-menu );
-    a {
-        text-decoration: dotted;
-    }
+    background-color:  map-get($map: $colores-rosa, $key: color-footer );
 }
