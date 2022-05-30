@@ -2,9 +2,6 @@
 @import 'formatoFondo';
 @import "footer";
 
-/* mixin */
-
-
 *
 {
     margin: 0;
@@ -24,7 +21,6 @@ html{
 
 body
 {
-
     @extend %fondo;
 
     background-image :url("Assets/Mandala_Transparente_2.02.png") ;
@@ -73,7 +69,7 @@ grid-template-areas:
 
 
 
-section#cv{
+.cv{
     margin: 10%;
 }
 
@@ -89,13 +85,18 @@ section#Presentacion{
 
 }
 
+
+
 footer{
     grid-area: footer;
     width: 100%;
     height: 100%;
    column-gap: 5px;
   background-color: map-get($map: $colores-rosa, $key: color-footer );
+
 }
+
+
 
 
 section#logoIndex{
@@ -204,9 +205,13 @@ display: flex;
 
 /*Quienes Somos?*/
 
-img.quienesSomos_silueta 
+.quienesSomos_silueta 
 {
-    float: left;
+    overflow: hidden;
+    border-style: solid;
+    border: 30px;
+    border: #f103038e;
+    float: right;
    padding: 30px;
     }
 
@@ -437,4 +442,51 @@ border: 10px;
 
 
         
+
+
+
+
+    
+// Esto vuelve responsive la foto de la psicologa
+    @media screen and (max-width:1051px){
+        img.quienesSomos_silueta 
+        {
+    float: none;
+            }     
+    }
+    @media screen and (max-width:1051px){
+        img.quienesSomos_silueta {
+
+            display: block;
+            margin-left: auto;
+            margin-right: auto
+        }
+    }
+
+
+
+    // margen de las imagenes en el articulo de por que es importante la psicologia 
+    .imagenArticuloIzquierda{
+        margin-right: 40px;
+    }
+
+    .imagenArticuloDerecha{
+        margin-left: 40px;
+    }
+
+
+
+/* esta parte hace que la text area de la pagina de contacto no sobrepase la pantalla en responsive */
+textarea{
+      max-width: 100%;
+    }                                                                                                                   
+
+
+
+
+        .maps {
+            width: 600px;
+            display: block;
+            margin: 0 auto;
+        }
     

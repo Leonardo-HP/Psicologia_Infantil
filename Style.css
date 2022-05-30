@@ -17,9 +17,8 @@ body {
 .footer {
   display: flex;
   justify-content: center;
-  background-color: #f57fbe; }
+  background-color: #ffbbe9; }
 
-/* mixin */
 * {
   margin: 0;
   margin-top: 0px;
@@ -52,7 +51,7 @@ body h1 {
   align-items: center;
   grid-template-areas: "logoIndex Menu Menu Menu Menu Menu  " " logoIndex Presentacion Presentacion Presentacion Presentacion ." ". Presentacion Presentacion Presentacion Presentacion ." ". Presentacion Presentacion Presentacion Presentacion ." "imagenes imagenes imagenes  imagenes imagenes imagenes" "footer footer footer footer footer footer"; }
 
-section#cv {
+.cv {
   margin: 10%; }
 
 section#Presentacion {
@@ -68,7 +67,7 @@ footer {
   width: 100%;
   height: 100%;
   column-gap: 5px;
-  background-color: #f57fbe; }
+  background-color: #ffbbe9; }
 
 section#logoIndex {
   grid-area: logoIndex; }
@@ -136,8 +135,12 @@ nav {
   margin: 1rem 0; }
 
 /*Quienes Somos?*/
-img.quienesSomos_silueta {
-  float: left;
+.quienesSomos_silueta {
+  overflow: hidden;
+  border-style: solid;
+  border: 30px;
+  border: #f103038e;
+  float: right;
   padding: 30px; }
 
 /*Blog*/
@@ -269,3 +272,28 @@ iframe {
     grid-area: logo;
     min-height: 100px;
     margin-top: 70px; } }
+
+@media screen and (max-width: 1051px) {
+  img.quienesSomos_silueta {
+    float: none; } }
+
+@media screen and (max-width: 1051px) {
+  img.quienesSomos_silueta {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; } }
+
+.imagenArticuloIzquierda {
+  margin-right: 40px; }
+
+.imagenArticuloDerecha {
+  margin-left: 40px; }
+
+/* esta parte hace que la text area de la pagina de contacto no sobrepase la pantalla en responsive */
+textarea {
+  max-width: 100%; }
+
+.maps {
+  width: 600px;
+  display: block;
+  margin: 0 auto; }
